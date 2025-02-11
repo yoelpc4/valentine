@@ -5,7 +5,7 @@ function App() {
 
   const [transformStyle, setTransformStyle] = useState({});
 
-  const getRandomNumber = () => Math.floor(Math.random() * 201) - 100;
+  const getRandomNumber = () => Math.floor(Math.random() * 201) - 100; // random between -100 until 100
 
   const randomizePosition = () => {
     const x = getRandomNumber();
@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center text-center gap-10 p-10 h-screen">
+    <div className="flex flex-col items-center justify-center text-center gap-10 p-10 h-screen bg-pink-200">
       {isAccepted ? (
         <>
           <svg
@@ -44,13 +44,13 @@ function App() {
           </h1>
           <div className="flex justify-evenly items-center w-full">
             <button
-              className="border rounded-full p-3 bg-red-500 text-white"
+              className="border border-pink-200 rounded-full p-3 bg-red-500 text-white"
               onClick={() => setIsAccepted(true)}
             >
               Yes, I will
             </button>
             <button
-              className="border rounded-full p-3 bg-stone-950 text-white transition-transform duration-10"
+              className="border border-pink-200 rounded-full p-3 bg-stone-950 text-white transition-transform duration-10"
               style={transformStyle}
               onMouseEnter={randomizePosition}
               onMouseLeave={randomizePosition}
