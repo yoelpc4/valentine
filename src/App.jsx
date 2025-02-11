@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-10 p-10 h-screen">
+    <div className="flex flex-col items-center justify-center text-center gap-10 p-10 h-screen">
       {isAccepted ? (
         <>
           <svg
