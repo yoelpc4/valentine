@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "vite build --base=./",
+    "predeploy": "vite build --base=/valentine/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
