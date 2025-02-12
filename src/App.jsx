@@ -37,13 +37,13 @@ function App() {
           </h1>
           <div className="flex justify-evenly items-center w-full">
             <button
-              className="border border-pink-200 rounded-full p-3 bg-red-500 text-white"
+              className="cursor-pointer border border-pink-200 rounded-full p-3 bg-red-500 text-white"
               onClick={() => setIsAccepted(true)}
             >
               Yes, I will
             </button>
             <button
-              className="border border-pink-200 rounded-full p-3 bg-stone-950 text-white transition-transform duration-10"
+              className="cursor-pointer border border-pink-200 rounded-full p-3 bg-stone-950 text-white transition-transform duration-10"
               style={transformStyle}
               onMouseEnter={randomizePosition}
               onMouseLeave={randomizePosition}
