@@ -29,7 +29,7 @@ export default function App() {
             width='300'
           />
           <h1 className='text-3xl font-bold text-pink-500'>
-            Yaay <span className='animate-pulse'>😘</span>
+            Happy Valentine <span className='animate-pulse'>😘</span>
           </h1>
         </>
       ) : (
@@ -42,7 +42,7 @@ export default function App() {
               className='cursor-pointer border border-pink-200 rounded-full p-3 bg-red-500 text-white'
               onClick={() => setIsAccepted(true)}
             >
-              Yes, I will
+              Yes, please
             </button>
             <button
               className='cursor-pointer border border-pink-200 rounded-full p-3 bg-stone-950 text-white transition-transform duration-10'
@@ -51,7 +51,7 @@ export default function App() {
               onMouseLeave={randomizePosition}
               onClick={randomizePosition}
             >
-              No, Why?
+              No, why?
             </button>
           </div>
         </>
