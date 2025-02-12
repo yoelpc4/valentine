@@ -1,0 +1,20 @@
+# editor
+.idea
+.vscode
+
+# dependencies
+/node_modules
+
+# production
+/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+yarn-debug.log*
+yarn-error.log*
+
+public
+yarn.lock
