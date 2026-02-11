@@ -5,9 +5,13 @@ const Letter: FC = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="box-border flex min-h-screen items-center justify-center bg-pink-400">
+        <div className="flex min-h-screen items-center justify-center">
             {/* wrapper */}
-            <div className="mt-[20%] bg-ivory shadow-2xl">
+            <div className={cn(
+                "bg-ivory shadow-2xl transition-all ease-in-out duration-500",
+                isOpen && 'mt-75',
+                isOpen ? 'delay-[400]' : 'delay-1000',
+            )}>
                 {/* envelope */}
                 <div className="relative h-57.5 w-75">
                     {/* cover */}
@@ -31,13 +35,13 @@ const Letter: FC = () => {
                         className={cn(
                             'absolute right-[20%] h-full w-[60%] bg-white p-3 text-justify text-xs leading-3.5 tracking-tighter text-charcoal shadow-sm transition-all duration-1000 ease-in-out',
                             isOpen && '-translate-y-24 scale-150 delay-1000',
-                            isOpen ? 'bottom-20' : 'bottom-0',
+                            isOpen ? 'bottom-30' : 'bottom-0',
                         )}
                     >
                         <h1 className="font-bold">Dear NN,</h1>
 
                         <p className="mt-2">
-                            I'm happy with how our LDR has progressed so far, as we continue to get to know each other day by day. Like a watchman
+                            I'm happy with how our LDR has progressed so far until our first valentine, as we continue to get to know each other day by day. Like a watchman
                             longing for the dawn, my heart longs for you. Remember I always love you, now and forever.
                             <br /> <br />
                             With Love, <span className="font-bold">YPC</span>.
