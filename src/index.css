@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-ivory: #f5edd1;
+    --color-warm-sand: #ecdeb8;
+    --color-sandy-tan: #e6cfa7;
+    --color-charcoal: #444;
+}
