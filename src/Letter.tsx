@@ -7,11 +7,13 @@ const Letter: FC = () => {
     return (
         <div className="flex min-h-screen items-center justify-center">
             {/* wrapper */}
-            <div className={cn(
-                "bg-ivory shadow-2xl transition-all ease-in-out duration-500",
-                isOpen && 'mt-75',
-                isOpen ? 'delay-[400]' : 'delay-1000',
-            )}>
+            <div
+                className={cn(
+                    'bg-ivory shadow-2xl transition-all duration-500 ease-in-out',
+                    isOpen && 'mt-75',
+                    isOpen ? 'delay-[400]' : 'delay-1000',
+                )}
+            >
                 {/* envelope */}
                 <div className="relative h-57.5 w-75">
                     {/* cover */}
@@ -41,8 +43,9 @@ const Letter: FC = () => {
                         <h1 className="font-bold">Dear NN,</h1>
 
                         <p className="mt-2">
-                            I'm happy with how our LDR has progressed so far until our first valentine, as we continue to get to know each other day by day. Like a watchman
-                            longing for the dawn, my heart longs for you. My goal this year is to get to know you better, so I can understand you better.
+                            I'm happy with how our LDR has progressed so far until our first valentine, as we continue to get to know each other day
+                            by day. Like a watchman longing for the dawn, my heart longs for you. My goal this year is to get to know you better, so I
+                            can understand you better.
                             <br /> <br />
                             With Love, <span className="font-bold">YPC</span>.
                         </p>
