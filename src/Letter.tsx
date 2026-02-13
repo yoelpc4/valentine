@@ -42,7 +42,7 @@ const Letter: FC = () => {
 
                         <p className="mt-2">
                             I'm happy with how our LDR has progressed so far until our first valentine, as we continue to get to know each other day by day. Like a watchman
-                            longing for the dawn, my heart longs for you. Remember I always love you, now and forever.
+                            longing for the dawn, my heart longs for you. My goal this year is to get to know you better, so I can understand you better.
                             <br /> <br />
                             With Love, <span className="font-bold">YPC</span>.
                         </p>
